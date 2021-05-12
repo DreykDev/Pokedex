@@ -1,0 +1,129 @@
+:root{
+  --white: #fdfffc;
+  --black: #0d1117;
+  --red: #8d0801;
+  --gray: #313131;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: sans-serif;
+  background-color: var(--white);
+}
+body{
+  overflow-x: hidden;
+}
+
+
+/* Empieza el header */
+
+.Header-main{
+  background-color: var(--gray);
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 5rem;
+  padding: 0.5rem 0 0.8rem 0.8rem;
+}
+.Header-nav{
+  display: grid;
+  grid-template-columns: 5rem 5rem;
+  height: auto;
+}
+/* .Header-nav a{
+  align-self: center;
+} */
+.Header-logo img{
+  width: 40%;
+  max-width: 26rem;
+}
+.Img-instagram{
+  width: 70%;
+}
+.Img-tiktok{
+  width: 70%;
+}
+/* Termina el header */
+
+/* Empieza section github */
+
+.Github{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.Github-main{
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 3rem;
+  width: 90vw;
+  height: auto;
+}
+.Main-github_img{
+  width: 20%;
+}
+.Main-github_img img{
+  width: 100%;
+}
+.Main-profile{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+.Profile-me_img{
+  width: 30%;
+  border-radius: 5rem;
+}
+.Main-profile ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Main-profile ul li{
+  color: var(--white);
+}
+a{
+  text-decoration: none;
+}
+
+/* Termina section github */
+
+/* Empieza section characters */
+
+.Characters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+}
+.Characters-item{
+  width: 45%;
+}
+.Characters-item a{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Characters-item a img{
+  width: 100%;
+  background-color: rgb(236, 234, 234);
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+.Characters-item a h2{
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+/* Termina section character */
