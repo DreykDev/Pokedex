@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin') //Plugin para poder tra
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Dotenv = require('dotenv-webpack')
+const { copyFile } = require('fs')
+
 
 module.exports = { //Modulos para exportar: Es donde instanciaremos toda configuracion de webpack
   entry: './src/index.js', //Lugar del que parte el codigo

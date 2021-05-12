@@ -4,7 +4,8 @@
   "description": "Curso single page application",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production --config webpack.config.js",
+    "build":"node ./scripts/create-env.js && webpack --mode production --config webpack.config.js",
+    "build:prod": "webpack --mode production --config webpack.config.js",
     "build:dev": "webpack --config webpack.config.dev.js",
     "start": "webpack serve --config webpack.config.js"
   },
